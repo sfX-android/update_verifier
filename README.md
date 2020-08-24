@@ -12,7 +12,9 @@ pip install -r requirements.txt
 
 You can verify whether a build has been signed with our keys with this command:
 
-`python update_verifier.py lineageos_pubkey /path/to/zip`
+`python update_verifier.py XXX_pubkey /path/to/zip`
+
+(obviously replace *XXX_pubkey* with the public key file and */path/to/zip* with the path to the zip you want to verify)
 
 If the script reports **verified successfully**, the ZIP file signature is valid.
 
