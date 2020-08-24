@@ -121,7 +121,7 @@ def main():
             ValueError,
             TypeError,
             OSError) as e:
-        traceback.print_exc()
+        #traceback.print_exc()
         print("failed verification", file=sys.stderr)
         sys.exit(1)
 
