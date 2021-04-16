@@ -1,7 +1,7 @@
 # Install
 
 ```
-git clone https://github.com/Suicide-Squirrel/update_verifier
+git clone https://github.com/sfX-Android/update_verifier
 cd update_verifier
 pip install -r requirements.txt
 ```
