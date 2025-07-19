@@ -10,7 +10,6 @@ pip install -r requirements.txt
 # modern approach
 python -m venv ~/.venvs/updateverifier
 ~/.venvs/updateverifier/bin/pip install -r requirements.txt
-export PATH=~/.venvs/updateverifier/bin:$PATH
 ```
 
 # Usage
@@ -19,9 +18,16 @@ export PATH=~/.venvs/updateverifier/bin:$PATH
 
 You can verify whether a build has been signed with our keys with this command:
 
-`python update_verifier.py <AXP.OS|EOS|LOS>/XXX_pubkey /path/to/zip`
+```
+# when not using a venv:
+python update_verifier.py <AXP.OS|EOS|LOS>/XXX_pubkey /path/to/zip`
 
-(obviously replace `<AXP.OS|EOS|LOS>/XXX_pubkey` with the public key file and */path/to/zip* with the path to the zip you want to verify)
+# when using a venv:
+`~/.venvs/updateverifier/bin/python update_verifier.py <AXP.OS|EOS|LOS>/XXX_pubkey /path/to/zip
+
+# (obviously replace "<AXP.OS|EOS|LOS>/XXX_pubkey" with the real public key file
+# and "/path/to/zip" with the path to the zip you want to verify)
+```
 
 If the script reports **verified successfully**, the ZIP file signature is valid.
 
