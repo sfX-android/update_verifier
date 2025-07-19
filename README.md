@@ -29,9 +29,7 @@ python update_verifier.py <AXP.OS|EOS|LOS>/XXX_pubkey /path/to/zip`
 # and "/path/to/zip" with the path to the zip you want to verify)
 ```
 
-If the script reports **verified successfully**, the ZIP file signature is valid.
-
-For the paranoid, the contents of this page are stored on our GitHub.
+If the script reports **verified successfully**, the ZIP file signature is valid and matching the given key.
 
 ## The public known AOSP testkey
 
