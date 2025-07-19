@@ -3,7 +3,14 @@
 ```
 git clone https://github.com/sfX-Android/update_verifier
 cd update_verifier
+
+# legacy (won't work on modern distributions):
 pip install -r requirements.txt
+
+# modern approach
+python -m venv ~/.venvs/updateverifier
+~/.venvs/updateverifier/bin/pip install -r requirements.txt
+export PATH=~/.venvs/updateverifier/bin:$PATH
 ```
 
 # Usage
